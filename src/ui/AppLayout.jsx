@@ -1,9 +1,14 @@
 import Header from "./Header";
 import CartOverview from "../features/cart/CartOverview";
-import { Outlet } from "react-router-dom";
+
+import Loader from "./Loader";
+import { Outlet, useLinkClickHandler, useNavigation } from "react-router-dom";
 function AppLayout() {
+  const navigation = useNavigation();
+  const isLoading = navigation.state == "loading";
   return (
-    <div>
+    <div className="layout">
+      {isLoading && <Loader />}
       <Header />
       <main>
         {/* To render the content of a nested route inside another route, use the Outlet element */}
