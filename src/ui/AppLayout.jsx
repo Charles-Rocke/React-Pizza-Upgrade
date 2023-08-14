@@ -1,11 +1,11 @@
-import Header from "./Header";
-import CartOverview from "../features/cart/CartOverview";
+import Header from './Header'
+import CartOverview from '../features/cart/CartOverview'
 
-import Loader from "./Loader";
-import { Outlet, useLinkClickHandler, useNavigation } from "react-router-dom";
-function AppLayout() {
-  const navigation = useNavigation();
-  const isLoading = navigation.state == "loading";
+import Loader from './Loader'
+import { Outlet, useLinkClickHandler, useNavigation } from 'react-router-dom'
+function AppLayout () {
+  const navigation = useNavigation()
+  const isLoading = navigation.state === 'loading'
   return (
     <div className="layout">
       {isLoading && <Loader />}
@@ -16,7 +16,7 @@ function AppLayout() {
       </main>
       <CartOverview />
     </div>
-  );
+  )
 }
 
-export default AppLayout;
+export default AppLayout

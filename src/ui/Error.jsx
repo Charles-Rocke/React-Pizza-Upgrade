@@ -1,8 +1,8 @@
-import { useNavigate, useRouteError } from 'react-router-dom';
+import { useNavigate, useRouteError } from 'react-router-dom'
 
-function Error() {
-  const navigate = useNavigate();
-  const error = useRouteError();
+function Error () {
+  const navigate = useNavigate()
+  const error = useRouteError()
   console.log(error)
 
   return (
@@ -12,7 +12,7 @@ function Error() {
       {/* go back one page with navicgate(-1) */}
       <button onClick={() => navigate(-1)}>&larr; Go back</button>
     </div>
-  );
+  )
 }
 
-export default Error;
+export default Error

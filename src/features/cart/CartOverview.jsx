@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
-function CartOverview() {
+function CartOverview () {
   return (
     <div>
       <p>
@@ -9,7 +9,7 @@ function CartOverview() {
       </p>
       <Link to="/cart">Open cart &rarr;</Link>
     </div>
-  );
+  )
 }
 
-export default CartOverview;
+export default CartOverview
