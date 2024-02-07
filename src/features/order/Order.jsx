@@ -24,9 +24,9 @@ function Order() {
   const deliveryIn = calcMinutesLeft(estimatedDelivery);
 
   return (
-    <div>
-      <div>
-        <h2>Status</h2>
+    <div className="space-y-8 px-4 py-6">
+      <div className="flex items-center justify-between">
+        <h2 className="text-xl font-semibold">Order number #{id} status</h2>
 
         <div>
           {priority && <span>Priority</span>}
