@@ -1,4 +1,7 @@
 Use a feature structure (feauture folder)
+
 ui folder contains reusable ui components (buttons, inputs, etc) typically no side effects
+
 service folder is for reusable code for interacting with an api
+
 utilities are helper functions that are reusable, stateless, helper functions that don't create any side effects
